@@ -22,7 +22,7 @@ def get_landmark():
 
 
     except:
-        result.set("someting went wrong")
+        result.set("something went wrong")
 
 
 def generate_map():
