@@ -35,7 +35,7 @@ def generate_map():
 # with background set to light grey
 master = Tk()
 master.configure(bg='light grey')
-master.title("Find Distance")
+master.title("Geocoding Locations")
 
 # Variable Classes in tkinter
 result = StringVar();
