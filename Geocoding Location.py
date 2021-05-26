@@ -2,9 +2,6 @@ from tkinter import *
 from geopy.geocoders import Nominatim
 import folium
 
-
-# location1 = geolocator.geocode(str(e1.get()))
-
 def get_landmark():
     try:
 
