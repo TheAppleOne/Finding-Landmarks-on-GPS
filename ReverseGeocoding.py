@@ -2,9 +2,7 @@ from tkinter import *
 from geopy.geocoders import Nominatim
 import folium
 
-
-
-def get_landmark():
+def get_coordinates():
     try:
 
         geolocator = Nominatim(user_agent="geoapiExercises")
@@ -12,8 +10,6 @@ def get_landmark():
 
         global Loc1_lat, Loc1_lon
         Loc1_lat, Loc1_lon = location1.latitude, location1.longitude
-
-        #location1 = (Loc1_lat, Loc1_lon)
 
         res1 = str((location1.address))
 
@@ -54,7 +50,7 @@ e1 = Entry(master, width=50)
 e1.grid(row=1, column=1)
 
 # creating a button using the widget
-b = Button(master, text="Show", command=get_landmark, bg="white")
+b = Button(master, text="Show", command=get_coordinates, bg="white")
 b.grid(row=1, column=2, columnspan=1, rowspan=1, padx=2.5, pady=2.5, )
 b1 = Button(master, text="GenerateMap", command=generate_map, bg="white")
 b1.grid(row=1, column=3, columnspan=1, rowspan=1, padx=2.5, pady=2.5, )
