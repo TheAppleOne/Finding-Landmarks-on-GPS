@@ -17,7 +17,7 @@ def get_coordinates():
 
 
     except:
-        result.set("someting went wrong")
+        result.set("something went wrong")
 
 
 def generate_map():
@@ -31,7 +31,7 @@ def generate_map():
 # with background set to light grey
 master = Tk()
 master.configure(bg='light grey')
-master.title("Find Distance")
+master.title("Reverse Geocoding")
 
 # Variable Classes in tkinter
 result = StringVar();
